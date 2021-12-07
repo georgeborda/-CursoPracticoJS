@@ -1,3 +1,16 @@
+//Función que calcula la altura de cualquier triángulo
+
+function altTriangulo (l1, l2, l3){
+    var altura, semiperimetro;
+
+    semiperimetro = (l1 + l2 + l3) / 2;
+
+    altura = 2 / l3 * Math.sqrt(semiperimetro*(semiperimetro-l1)*(semiperimetro-l2)*(semiperimetro-l3));
+
+    return altura;
+}
+
+
 //Código del cuadrado
 
 console.group("Cuadrados");
@@ -22,10 +35,10 @@ console.groupEnd();
 
 console.group("Triángulos");
 
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const ladoTriangulo3 = 4; 
-const alturaTriangulo = Math.sqrt(ladoTriangulo2**2 - (ladoTriangulo3/2)**2);
+const ladoTriangulo1 = 4;
+const ladoTriangulo2 = 5;
+const ladoTriangulo3 = 3; 
+const alturaTriangulo = altTriangulo(ladoTriangulo1, ladoTriangulo2, ladoTriangulo3);
 
 console.log("Los lados del triángulo miden "+ ladoTriangulo1 + " cm, "+ ladoTriangulo2 + " cm y "+ ladoTriangulo3 + " cm");
 
