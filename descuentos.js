@@ -20,10 +20,10 @@ function onClickButtonPriceDiscount(){
             descuento = 0.2;
         break;
         case cupon[2]:
-            descuento = 0.1;
+            descuento = 0.3;
         break;
         case cupon[3]:
-            descuento = 0.1;
+            descuento = 0.4;
         break;
         default:
             descuento = 0;
